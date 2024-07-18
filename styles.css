@@ -1,3 +1,7 @@
+* {
+    border: 1px red solid;
+}
+
 body {
     background-color: white;
     display: flex;
@@ -9,11 +13,13 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(15, 54, 69);
+    padding: 0px 48px;
 }
 
 .header .title {
-    font-size: 36px;
+    font-size: 18px;
     color: white;
     font-weight: 900;
 }
@@ -21,35 +27,106 @@ body {
 .sub-header {
     background-color: rgb(15, 54, 69);
     flex: 1;
-    padding: 16px;
+    padding: 0px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-items {
+    max-width: 50%;
+    flex: 1;
+}
+
+.right-items {
+    max-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
+
 .left-items .title {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 900;
     color: white;
+    margin-bottom: 5px;
+}
+
+.left-items .text {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.sign-up-button {
+    background-color: rgb(99, 123, 255);
+    color: white;
+    font-weight: 700;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.image-box {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
 }
 
 .image-box img {
-    width: 300px;
+    max-width: 100%;
+    max-height: 80%;
     height: auto;
+    width: auto;
 }
 
 .information {
-    background-color: antiquewhite;
     flex: 1;
+}
+
+.information .title {
+    font-size: 24px;
+    color: rgb(15, 54, 69);
+    font-weight: 900;
+    text-align: center;
+    padding: 18px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+.cards img {
+    width: 100px;
+    height: 100px;
 }
 
 .quote {
-    background-color: rgb(75, 120, 120);
-    flex: 1;
+    background-color: rgb(209, 209, 209);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
 }
 
 .ad {
-    background-color: rgb(111, 111, 184);
     flex: 1;
 }
 
@@ -62,5 +139,6 @@ ul {
     display: flex;
     gap: 8px;
     font-weight: 700px;
+    font-size: 16px;
     color: white;
 }
